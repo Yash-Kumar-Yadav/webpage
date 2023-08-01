@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 100%;
+    
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 3ms;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: blue;
+}
+
+.home{
+  height: 100vh;
+  background: url('minimal-rocket-wallpaper.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;  
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(255, 136, 0);
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: rgb(27, 219, 253);
+  border: 2px solid #391440;
+  border-radius: 8px;
+  font-size: 19px;
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.btn-box a:hover{
+  color: red;
+}
+
+.btn-box a:nth-child(2){
+  background: transparent;
+  color: blue;
+}
+
+.btn-box a:nth-child(2):hover{
+  color: black;
+}
+
+.btn-box a:nth-child(2)::before{
+  background: rgb(154, 4, 241);
+}
+
+.btn-box a::before{
+  content:  '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(248, 183, 6);
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box a:hover::before{
+  width: 100%;
+}
+
+.home-sci{
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;    
+}
+
+.home-sci a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ece8e8fb;
+  border-radius: 50%;
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.home-sci a:hover{
+  color: black;
+}
+
+.home-sci a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+  transition: .5s;
+}
+
+.home-sci a:hover::before{
+  width: 100%;
+} 
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #0e0808;
+  padding: 10px 0;
+}
+
+.container12{
+  width: 100%;
+  height: .5vh;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container form{
+  margin-left: 10px;
+  padding:  10% 80px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: right;
+  flex-direction: column;
+}
+
+.inputBox{
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inputBox input[type="text"], .inputBox input[type="email"]{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 0px 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.inputBox textarea{
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border: 2px solid rgb(255, 251, 0);
+  padding: 0px 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.inputBox button{
+  width: 100%;    
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: rgb(255, 0, 85);
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.inputBox button:hover{
+  background: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+::placeholder{
+  font-size: 16px;
+}
+
+.alert{
+  width: 100%;
+  background: rgba(136, 255, 0, 0.733);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
